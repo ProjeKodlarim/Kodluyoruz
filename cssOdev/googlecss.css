@@ -1,0 +1,55 @@
+ body{
+        text-align: center;
+    }
+
+    .ana{
+        margin-left: 100px; 
+        margin-right: 100px;
+
+    }
+
+    .üstkisim{
+        background: #EEEEEE; 
+        margin-bottom: 5px;
+        padding-bottom: 3px; 
+        
+    }
+
+    .üstkisim p{
+        margin-bottom: 0px;;
+    }
+
+
+    .sol{
+        background-color: #7EE5DA;
+        float: left;
+        width: 37%;
+		height:60px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .orta{
+        float: left;
+        background-color: #70CCC2;
+        font-size: small;
+        width: 20%;
+		height:60px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sag{
+        float: right;
+        background-color: #62B3AA;
+        text-align: center;
+        font-size: small;
+        width: 37.75%;
+		height:60px;
+        padding: 10px;
+    }
+
+    .tb{
+        border: 0;
+        width: 100%;
+    }
