@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class NotHesaplamasi {
+
+	public static void main(String[] args) {
+		int matematik,turkce,fizik,kimya,muzik,tarih;
+        Scanner scan=new Scanner(System.in);
+       double ucret,tutar = 0; 
+       System.out.println("Parayı giriniz:");
+       ucret=scan.nextDouble();
+       
+       if(ucret<1000 && ucret>0) {
+    	   //tutar=ucret+((ucret*18)/100);
+    	   tutar=ucret*1.18;
+       }
+       else if(ucret>1000){
+    	  // tutar=ucret+((ucret*8)/100);
+    	   tutar=ucret*1.08;
+       }
+       System.out.println(tutar);
+        
+	}
+
+}
