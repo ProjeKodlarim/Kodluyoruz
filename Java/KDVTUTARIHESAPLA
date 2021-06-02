@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class NotHesaplamasi {
 
 	public static void main(String[] args) {
-		int matematik,turkce,fizik,kimya,muzik,tarih;
         Scanner scan=new Scanner(System.in);
        double ucret,tutar = 0; 
        System.out.println("Parayı giriniz:");
