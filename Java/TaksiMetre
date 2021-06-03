@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Taksimetre {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		double km,tutar=10;
+		System.out.println("Gidilen kilometreyi giriniz:");
+		km=scan.nextDouble();
+		tutar=tutar+(km*2.2);
+		if(tutar<20) {
+			tutar=20;
+		}
+		System.out.println("Ödenecek Tutar:"+tutar);        
+	}
+
+}
