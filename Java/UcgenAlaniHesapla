@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NotHesaplamasi {
+public class Ucgen {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
