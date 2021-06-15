@@ -1,0 +1,35 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	int mesafe,yas,yolculukTipi;
+    	float tutar=0;
+    	System.out.print("Mesafeyi km türünden giriniz :");
+    	mesafe=scan.nextInt();
+    	System.out.print("Yaşınızı giriniz :");
+    	yas=scan.nextInt();
+    	System.out.println("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ):");
+    	yolculukTipi=scan.nextInt();
+    	
+    	if(mesafe<0 || yas<0 || yolculukTipi>2 || yolculukTipi<1)
+    		System.out.println("Hatalı Veri Girdiniz!");
+    	else {
+    		tutar=(float) (mesafe*(0.1));
+    		if(yas<12)
+    			tutar=(float) (tutar*(0.5));
+    		else if(yas>11 && yas<25)
+    			tutar=(float) (tutar*(0.9));
+    		else if(yas>65)
+    			tutar=(float) (tutar*(0.7));
+    		if(yolculukTipi==2)
+    			tutar=(float) (tutar*(0.8)*2);
+    		System.out.println("tutar:"+tutar);
+    	}
+    	
+   }
+}
