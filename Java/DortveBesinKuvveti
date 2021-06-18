@@ -1,0 +1,20 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	
+    	int sayi=0,dortKati=1,besKati=1;
+    	System.out.print("Sayı gir:");
+    	sayi=scan.nextInt();
+    	for(int i=1;i<=sayi;i++) {
+    		dortKati*=4;
+    		besKati*=5;
+    		System.out.println(dortKati+" - "+besKati);
+    	}
+   }
+}
