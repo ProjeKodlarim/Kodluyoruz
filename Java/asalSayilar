@@ -1,0 +1,24 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	boolean asal=true;
+    	for(int sayi=2;sayi<=100;sayi++) {
+    		for(int i=2;i<sayi;i++) {
+    			if(sayi%i==0)
+    				asal=false;
+    		}
+    		if(asal)
+    			System.out.print(sayi+" ");
+    		asal=true;
+    	}
+    	
+    	
+    	
+   }
+}
