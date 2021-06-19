@@ -1,0 +1,27 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	
+    	int sonuc=1,sonucTaban=1,n=0,r=0;
+    	System.out.print("Eleman sayısını giriniz(n):");
+    	n=scan.nextInt();
+    	System.out.print("Kaç farklı grup oluşturmak istiyorsunuz(r):");
+    	r=scan.nextInt();
+    	for(int i=1;i<=n;i++) {
+    		sonuc=sonuc*i;
+    	}
+    	for(int i=1;i<=r;i++) {
+    		sonucTaban=sonucTaban*i;
+    	}
+    	for(int i=1;i<=(n-r);i++) {
+    		sonucTaban=sonucTaban*i;
+    	}
+    	System.out.println("Sonuc:"+(sonuc/sonucTaban));
+   }
+}
