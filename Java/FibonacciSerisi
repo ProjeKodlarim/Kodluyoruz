@@ -1,0 +1,26 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	
+    	System.out.println("Kaç tane fibonacci sayısını yazdırmak istersiniz:");
+    	int sayi=scan.nextInt();
+    	
+    	int f1=0,f2=1,fib=f1+f2;
+    	System.out.print(sayi+" Elemanlı Fibonacci Serisi:");
+    	System.out.print(f1+"-"+f2+"-"+fib);
+    	for(int i=0;i<=(sayi-3);i++) {
+    		f1=f2;
+    		f2=fib;
+    		fib=f1+f2;
+    		System.out.print("-"+fib);
+    	}
+    	
+    	
+   }
+}
