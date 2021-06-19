@@ -1,0 +1,26 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+    
+    public static void main(String[] args) {
+    	Scanner scan=new Scanner(System.in);
+    	
+    	System.out.print("Basamak sayısı:");
+    	int basamak=scan.nextInt();
+    	
+    	for(int i=0;i<basamak;i++) {
+        	for(int z=0;z<(i+1);z++) {
+        		System.out.print(" ");
+        	}
+        	for(int y=0;y<((2*basamak-1)-2*i);y++) {
+        		System.out.print("*");
+        	}
+        	System.out.println(" ");
+        	
+        }
+    	
+   }
+}
