@@ -1,0 +1,24 @@
+package omerExample;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Example {
+	
+	static int usHesapla(int us,int sayi) {
+		if(us==0)
+			return 1;
+		return sayi*usHesapla(us-1, sayi);
+	}
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Taban değerini giriniz :");
+        int taban=scan.nextInt();
+        System.out.println("Üs değerini giriniz :");
+        int us=scan.nextInt();
+    
+        System.out.println(usHesapla(us,taban));
+    	
+   }
+}
